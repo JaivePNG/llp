@@ -1,0 +1,42 @@
+.chat textarea {
+    width: 100%;
+}
+li.active {
+    background-color: gray;
+    color: white;
+}
+li.active a {
+    color:white;
+}
+
+message label {
+    font-weight: normal;
+    color: #aaa;
+    margin: 0;
+}
+
+message span {
+    background: lightblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+message {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline-block;
+}
+message.self {
+    text-align: right
+}
+message.self span {
+    background: lightgreen;
+}
+
+
+@media (max-width: 767px) {
+    .chat .panel-body {
+        max-height: 52vh !important;
+    }
+}
